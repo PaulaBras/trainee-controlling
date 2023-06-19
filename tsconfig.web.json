@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/frontend/**/*",
+    "src/shared/**/*"
+  ],
+  "exclude": [
+    "src/frontend/vite.config.ts"
+  ],
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "composite": false,
+    "noEmit": true
+  }
+}
