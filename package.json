@@ -9,7 +9,7 @@
 
     "paths": "resolve-tspaths --out \"dist\"",
 
-    "start": "resolve-tspaths --out \"dist\" && node --inspect=0.0.0.0:9229 dist/backend/app.js",
+    "start": "resolve-tspaths --out \"dist\" && node --inspect=0.0.0.0:9229 dist/backend/index.js",
     "dev": "tsc-watch -p ./tsconfig.node.json --onSuccess \"npm run start\" --onFailure \"echo WHOOPS! Server compilation failed\"",
 
     "spa-dev": "vite --config=src/frontend/vite.config.ts",
