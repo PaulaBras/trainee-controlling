@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import { Foo } from '../../shared/types/foo.types';
 
 import reactLogo from './assets/react.svg';
 import './App.css';
@@ -8,9 +7,6 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
-  const foo: Foo = {
-    fooStr: 'foo',
-  };
 
   return (
     <div className="App">
@@ -25,7 +21,6 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount(count + 1)}>
-          count is {count} {foo.fooStr}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
